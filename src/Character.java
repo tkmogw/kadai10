@@ -8,7 +8,7 @@ public class Character {
 		   this.vx=vx;
 		   this.vy=vy;
 	   }
-	   public void more()
+	   public void move()
 	   {
 		   x+=vx;
 		   y+=vy;
