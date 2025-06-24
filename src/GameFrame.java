@@ -17,8 +17,8 @@ public class GameFrame extends MyFrame{
 			while(true)
 			{
 				clear();
-				drawString("stage="+GameWorld.stage,300,50,15);
-				drawString("score="+GameWorld.score,300,80,15);
+				drawString("stage="+GameWorld.stage,400,50,15);
+				drawString("score="+GameWorld.score,400,80,15);
 				GameWorld.player.draw(this);
 				GameWorld.player.move();
 				movePlayerBullets();
@@ -42,7 +42,7 @@ public class GameFrame extends MyFrame{
 				if (GameWorld.enemies.size()==0)
 				{
 					setColor(0,0,0);
-					drawString("クリア！",100,200,40);
+					drawString("クリア",100,200,40);
 					if(GameWorld.enterPressed)
 					{
 					GameWorld.stage++;
@@ -53,7 +53,7 @@ public class GameFrame extends MyFrame{
 				else if(GameWorld.player.y<0)
 				{
 					setColor(0,0,0);
-					drawString("ゲームオーバー！",50,200,40);
+					drawString("け゛ーむ　おーは゛ー",50,200,40);
 					if(GameWorld.enterPressed)
 					{
 						GameWorld.stage=1;
@@ -97,7 +97,7 @@ public class GameFrame extends MyFrame{
 			{
 				Enemy e=GameWorld.enemies.get(i);
                  {
-					if (e.y>400)
+					if (e.y>450)
 					{
 						GameWorld.enemies.remove(i);
 					}

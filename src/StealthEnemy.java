@@ -11,6 +11,7 @@ public class StealthEnemy extends Enemy{
 		
 		vx=vx+GameWorld.stage*0.005+0.01;
 		vy=vy+GameWorld.stage*0.005+0.01;
+		
 	}
 	public void draw(MyFrame f) {
 		f.setColor(245, 245, 245);

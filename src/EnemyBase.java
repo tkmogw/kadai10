@@ -9,7 +9,7 @@ public class EnemyBase extends Enemy{
 	public void move()
 	{
 		super.move();
-		if (x>300) vx=-GameWorld.stage;
+		if (x>450) vx=-GameWorld.stage;
 		if (x<0) vx=GameWorld.stage;
 		if (Math.random()<0.05)
 		{

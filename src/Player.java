@@ -89,7 +89,9 @@ public void draw(MyFrame f)
 		{
 			super.move();
 			if (x<0) x=0;
-			if (x>370) x=370;
+			//if (y<0) y=0;
+			if (x>470) x=470;
+			if (y>470) y=470;
 		}
 
 }
